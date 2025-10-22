@@ -1,0 +1,12 @@
+export const createGenerationsTable = `
+  CREATE TABLE IF NOT EXISTS generations (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    userId INTEGER NOT NULL,
+    prompt TEXT NOT NULL,
+    style TEXT NOT NULL,
+    imageUrl TEXT NOT NULL,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY(userId) REFERENCES users(id) ON DELETE CASCADE
+  );
+`;
