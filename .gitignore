@@ -3,7 +3,7 @@
 
 # Env files everywhere
 **/.env
-
+.env.test
 # Playwright
 /blob-report/
 /playwright/.cache/

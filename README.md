@@ -4,11 +4,16 @@ Transform your images with AI-powered generation.
 
 ## 🚀 Quick Start
 
+# Use custom URL
+BASE_URL=http://localhost:3000 npm run test:e2e
+```
+
 ### Prerequisites
 - Node.js 18+
 - npm or yarn
 
 ### Installation
+
 
 \`\`\`bash
 # Clone repository

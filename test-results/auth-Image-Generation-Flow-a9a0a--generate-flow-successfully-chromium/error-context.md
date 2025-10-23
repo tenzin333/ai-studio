@@ -1,0 +1,59 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - button "Switch to dark mode" [ref=e4]:
+      - img [ref=e5]
+    - generic [ref=e8]:
+      - banner [ref=e9]:
+        - generic [ref=e10]:
+          - heading "Image Generation Studio" [level=1] [ref=e11]
+          - paragraph [ref=e12]: Transform your images with AI-powered generation
+        - button "Open logout menu" [ref=e14]:
+          - generic [ref=e15]: Logout
+      - generic [ref=e16]:
+        - main [ref=e17]:
+          - form "Image generation form" [ref=e19]:
+            - alert [ref=e20]:
+              - paragraph [ref=e21]: Generation failed
+            - generic [ref=e22]:
+              - generic [ref=e23]:
+                - generic [ref=e24]: Prompt
+                - generic "required" [ref=e25]: "*"
+              - textbox "Prompt required" [ref=e26]:
+                - /placeholder: Describe how you want to transform the image...
+                - text: A beautiful sunset over mountains
+            - generic [ref=e27]:
+              - generic [ref=e28]: Style
+              - combobox "Select image style" [ref=e29] [cursor=pointer]:
+                - option "Realistic - Photorealistic style"
+                - option "Anime - Japanese animation style"
+                - option "Oil Painting - Classic painted look"
+                - option "Watercolor - Soft, fluid artistic style"
+                - option "Digital Art - Modern digital illustration" [selected]
+                - option "3D Render - Three-dimensional CGI style"
+            - generic [ref=e30]:
+              - generic [ref=e31]:
+                - generic [ref=e32]: Upload Image
+                - generic "required" [ref=e33]: "*"
+                - generic [ref=e34]: (Max 10MB, JPEG/PNG)
+              - generic [ref=e35]:
+                - img "Preview of uploaded image" [ref=e36]
+                - button "Remove uploaded image" [ref=e37]: ✕
+                - generic [ref=e38]:
+                  - paragraph [ref=e39]: sample.jpg
+                  - paragraph [ref=e40]: 0.00 MB
+            - button "Generate image" [ref=e42]:
+              - generic [ref=e43]: 🎨
+              - text: Generate Image
+        - complementary "Generation history" [ref=e44]:
+          - generic [ref=e45]:
+            - heading "Recent Generations" [level=2] [ref=e46]:
+              - generic [ref=e47]: 📜
+              - text: Recent Generations
+            - status "No generations yet" [ref=e48]:
+              - generic [ref=e49]: 📦
+              - paragraph [ref=e50]: No generations yet
+```

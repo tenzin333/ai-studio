@@ -7,6 +7,7 @@
     "test": "tests"
   },
   "scripts": {
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend",
     "test": "npm-run-all test:backend test:frontend test:e2e",
     "test:backend": "cd backend && npm test",
     "test:frontend": "cd frontend && npm test || exit 0",
